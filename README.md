@@ -10,5 +10,4 @@ View online: https://supertyrelle.com/demos/nw-counseling
 <ul>
 <li>SCSS (Pre-processor)</li>
 <li>Parcel (Bundler)</li>
-<li>swup.js (Page transitions)</li>
 </ul>
