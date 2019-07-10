@@ -8,14 +8,23 @@
         "url": "git+https://github.com/supertyrelle/nw-counseling.git"
     },
     "scripts": {
-        "dev": "parcel src/index.html --port 123",
+        "dev": "parcel src/index.html --port 444",
         "pack": "parcel build src/index.html -d export --public-url ."
     },
-    "keywords": ["supertyrelle", "northwest counseling"],
+    "keywords": [
+        "supertyrelle",
+        "northwest counseling"
+    ],
     "author": "Tyrelle Phillips",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/supertyrelle/nw-counseling/issues"
     },
-    "homepage": "https://github.com/supertyrelle/nw-counseling#readme"
+    "homepage": "https://github.com/supertyrelle/nw-counseling#readme",
+    "devDependencies": {
+        "sass": "^1.22.3"
+    },
+    "dependencies": {
+        "swup": "^2.0.4"
+    }
 }

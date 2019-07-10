@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAIA;EACI,YAJO","file":"style.97fcb138.css","sourceRoot":"../src","sourcesContent":["// colors!\n$eggshell: white;\n\n\nbody {\n    background: $eggshell;\n}"]}
