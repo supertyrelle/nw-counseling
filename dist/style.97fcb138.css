@@ -63,6 +63,38 @@ h4 {
   font-family: "DM Serif Text", serif;
 }
 
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #08b58d;
+  transform-origin: center;
+  transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.55s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+}
+button:hover::before {
+  transform: translate3d(20%, 50%, 0) scale3d(15, 15, 15);
+}
+
 header {
   padding-top: 1em;
   position: relative;
@@ -136,7 +168,7 @@ header .calltoaction .plant {
 
 .experience-wrapper {
   background: #068467;
-  margin-top: -5em;
+  margin-top: -7em;
   padding-bottom: 4em;
   z-index: 0;
   position: relative;
@@ -152,7 +184,8 @@ header .calltoaction .plant {
 }
 .experience-wrapper .experience {
   color: #e6e9e8;
-  padding-top: 5em;
+  padding-top: 8em;
+  padding-bottom: 5em;
   position: relative;
   z-index: 2;
 }
@@ -187,6 +220,32 @@ header .calltoaction .plant {
   font-size: 10pt;
   border-bottom: 1.5px solid #d9e053;
   line-height: 1.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+  border-top: 5px solid #000100;
+}
+footer .logo {
+  height: 80px;
+}
+footer .contact-us {
+  color: #004d4a;
+}
+footer .contact-us span:nth-child(2) {
+  font-size: 20pt;
+  font-weight: 200;
+  padding: 1em 0;
+}
+footer .contact-us span + span {
+  margin-left: 15px;
+}
+footer .contact-us span i {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
