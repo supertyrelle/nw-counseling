@@ -12,6 +12,3 @@ View online: https://supertyrelle.com/demos/nw-counseling
 <li>Parcel (Bundler)</li>
 <li>swup.js (Page transitions)</li>
 </ul>
-# nw-counseling
-Functional two-page website mockup based on Serhii Polyvanyi's NCWC shot on Dribbble.
-View Dribbble shot: https://dribbble.com/shots/6755695-NCWC-Home-page
