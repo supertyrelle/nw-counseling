@@ -8,7 +8,6 @@ serif;
 // colors!
 $eggshell: #e6e9e8;
 $mint: #f8fcf1;
-$light-forest: #058565;
 $forest: #068467;
 $dark-forest: #004d4a;
 $lime: #d9e053;
@@ -18,6 +17,7 @@ $lime: #d9e053;
     width: 95vw;
     max-width: 1500px;
     position: relative;
+    margin: 0 auto;
 }
 
 .flex-row-between {
@@ -27,10 +27,48 @@ $lime: #d9e053;
     align-items: center;
 }
 
+.flex-row-between-base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-col-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: $mint;
     font-family: $muli;
 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1,
@@ -42,4 +80,158 @@ h4 {
 
 
 
-header {}
+header {
+    padding-top: 1em;
+    position: relative;
+    z-index: 2;
+
+    nav {
+        color: $forest;
+        font-weight: 700;
+        padding-bottom: 0.5em;
+
+        .menu {
+
+            a+a {
+                margin-left: 20px;
+            }
+        }
+
+        .logo {
+            max-width: 180px;
+        }
+
+        .contact-us {
+            color: lighten($forest, 5%);
+
+            span {
+                &:nth-child(2) {
+                    font-size: 20pt;
+                    font-weight: 200;
+                    padding: 1em 0;
+                }
+            }
+
+            span+span {
+                margin-left: 15px;
+            }
+
+            span i {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    hr {
+        border: solid 1px $forest;
+    }
+
+    .calltoaction {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 4em;
+            width: 60vw;
+            max-width: 800px;
+            height: 500px;
+
+            h1 {
+                color: $dark-forest;
+                font-size: 36pt;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $forest;
+                font-size: 14pt;
+                margin-bottom: 40px;
+                line-height: 22pt;
+            }
+
+            button {
+                // margin-top: 2em;
+                border-radius: 70px;
+                padding: 1em 2em;
+                font-size: 16pt;
+                font-weight: 400;
+                background: $forest;
+                color: $eggshell;
+            }
+        }
+
+        .plant {
+            max-height: 700px;
+        }
+    }
+}
+
+.experience-wrapper {
+    background: $forest;
+    margin-top: -5em;
+    padding-bottom: 4em;
+    z-index: 0;
+    position: relative;
+
+    .dark-forest {
+        position: absolute;
+        width: 30vw;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        background: $dark-forest;
+    }
+
+    .experience {
+        color: $eggshell;
+        padding-top: 5em;
+        position: relative;
+
+        z-index: 2;
+
+        .woman {
+            width: 50%;
+        }
+
+        .info {
+            width: 40vw;
+            max-width: 650px;
+            margin-top: 5em;
+
+            h2 {
+                font-size: 32pt;
+                font-weight: 200;
+            }
+
+            p {
+                margin-top: 2rem;
+                line-height: 20pt;
+                font-weight: 200;
+                margin-bottom: 2em;
+            }
+
+            .travel {
+                display: flex;
+                flex-direction: row;
+                align-content: flex-start;
+                width: 85%;
+                justify-content: space-between;
+
+                a {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 10pt;
+                    border-bottom: 1.5px solid $lime;
+                    line-height: 1.5em;
+
+                }
+            }
+        }
+    }
+}

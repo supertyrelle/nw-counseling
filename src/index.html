@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- standard meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Northwest Counseling</title>
-
+    <!-- css styles -->
     <link rel="stylesheet" href="./style.scss">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0c82932c82.js"></script>
 </head>
 
 <body>
@@ -20,17 +23,18 @@
                 <a href="#">Trends</a>
             </div>
             <img src="./img/logo_v1.jpg" alt="Northwest Counseling & Wellness Center" class="logo">
-            <div class="contact-us">
+            <div class="contact-us flex-row-between-base">
                 <span class="phone">
                     <i class="fas fa-phone-alt"></i>(512) 250 9355
                 </span>
+                <span>|</span>
                 <span class="email">
                     <i class="fas fa-envelope"></i>info@ncwcustin.com
                 </span>
             </div>
         </nav>
-        <hr>
-        <div class="calltoaction">
+        <hr class="container">
+        <div class="calltoaction container">
             <div class="info">
                 <h1>Northwest Counseling & Wellness Center one-line CTA statement.</h1>
                 <p>Very brief overview of NCWC that encompasses "who, what, and how" NCWC is & functions. This paragraph
@@ -39,29 +43,31 @@
                     <button>Call To Get Started</button>
                 </a>
             </div>
-            <div class="plant">
-                <img src="http://placehold.it/400x700" alt="plant">
-            </div>
+            <img src="./img/cactus.png" class="plant" alt="plant">
         </div>
     </header>
-    <section class="experience">
-        <img src="http://placehold.it/400x500" alt="">
-        <div class="info">
-            <h2>Experience common sense, natural and evidenced-based solutions to suffering.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis rem. Consectetur tempora
-                voluptate non nihil voluptatibus maiores deleniti quisquam, eius sint architecto adipisci facere fugiat
-                aperiam totam a minus vero temporibus sit commodi ea cum maxime! Nemo tenetur totam reprehenderit
-                assumenda hic! Optio nesciunt laudantium ad, officiis delectus temporibus cum magnam. Ratione vel earum
-                similique laborum minima veritatis magnam aspernatur aut rem placeat recusandae sunt quasi incidunt
-                eveniet impedit quidem libero facilis vitae porro, aliquid cumque et? Ad, quae!</p>
-            <div class="travel">
-                <a href="#">Mental Health</a>
-                <a href="#">Substance Abuse</a>
-                <a href="#">Our Method</a>
+    <div class="experience-wrapper">
+        <section class="experience flex-row-around container">
+            <img src="./img/woman.png" class="woman" alt="Woman wearing headphones">
+            <div class="info">
+                <h2>Experience common sense, natural and evidenced-based solutions to suffering.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis rem. Consectetur
+                    temporav oluptate non nihil voluptatibus maiores deleniti quisquam, eius sint architecto adipisci
+                    facere fugiat aperiam totam a minus vero temporibus sit commodi ea cum maxime! Nemo tenetur totam
+                    reprehenderit assumenda hic! Optio nesciunt laudantium ad, officiis delectus temporibus cum magnam.
+                    Ratione vel earum similique laborum minima veritatis magnam aspernatur aut rem placeat recusandae
+                    sunt quasi incidunt eveniet impedit quidem libero facilis vitae porro, aliquid cumque et? Ad, quae!
+                </p>
+                <div class="travel">
+                    <a href="#">Mental Health</a>
+                    <a href="#">Substance Abuse</a>
+                    <a href="#">Our Method</a>
+                </div>
             </div>
-        </div>
-        <div class="dark-green"></div>
-    </section>
+        </section>
+        <div class="dark-forest"></div>
+    </div>
     <!-- scripts! -->
     <script src="./app.js"></script>
 </body>
