@@ -1,7 +1,45 @@
-// colors!
-$eggshell: white;
+// fonts!
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:400,400i|Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+$muli: 'Muli',
+sans-serif;
+$df: 'DM Serif Text',
+serif;
 
+// colors!
+$eggshell: #e6e9e8;
+$mint: #f8fcf1;
+$light-forest: #058565;
+$forest: #068467;
+$dark-forest: #004d4a;
+$lime: #d9e053;
+
+// flexbox tech!
+.container {
+    width: 95vw;
+    max-width: 1500px;
+    position: relative;
+}
+
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 body {
-    background: $eggshell;
+    background: $mint;
+    font-family: $muli;
+
 }
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $df;
+}
+
+
+
+header {}
