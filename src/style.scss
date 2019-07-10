@@ -279,29 +279,14 @@ footer {
     align-items: center;
     padding: 2em 0;
 
-    border-top: 5px solid darken($dark-forest, 15%);
+    border-top: 5px solid $dark-forest;
 
     .logo {
         height: 80px;
     }
 
-    .contact-us {
-        color: $dark-forest;
-
-        span {
-            &:nth-child(2) {
-                font-size: 20pt;
-                font-weight: 200;
-                padding: 1em 0;
-            }
-        }
-
-        span+span {
-            margin-left: 15px;
-        }
-
-        span i {
-            margin-right: 8px;
-        }
+    .credit {
+        // text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.386);
     }
 }

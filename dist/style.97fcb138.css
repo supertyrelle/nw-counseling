@@ -228,24 +228,13 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 2em 0;
-  border-top: 5px solid #000100;
+  border-top: 5px solid #004d4a;
 }
 footer .logo {
   height: 80px;
 }
-footer .contact-us {
-  color: #004d4a;
-}
-footer .contact-us span:nth-child(2) {
-  font-size: 20pt;
-  font-weight: 200;
-  padding: 1em 0;
-}
-footer .contact-us span + span {
-  margin-left: 15px;
-}
-footer .contact-us span i {
-  margin-right: 8px;
+footer .credit {
+  color: rgba(0, 0, 0, 0.386);
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
