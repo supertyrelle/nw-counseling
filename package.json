@@ -22,6 +22,7 @@
     },
     "homepage": "https://github.com/supertyrelle/nw-counseling#readme",
     "devDependencies": {
+        "cssnano": "^4.1.10",
         "sass": "^1.22.3"
     },
     "dependencies": {
